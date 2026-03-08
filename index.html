@@ -3,136 +3,284 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motor Operating Venture Express | Same Day & Evening Courier Service</title>
+<title>Motor Operating Venture Express</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f6f9;
-    color: #333;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
-header {
-    background: #0a1f44;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+
+body{
+background:#f4f4f4;
+color:#333;
+line-height:1.6;
 }
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+
+header{
+background:#0b0b0b;
+color:white;
+text-align:center;
+padding:40px 20px;
 }
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
+
+header img{
+max-width:160px;
+margin-bottom:15px;
 }
-.section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
+
+nav{
+background:#1c1c1c;
+padding:15px;
+text-align:center;
 }
-.section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #0a1f44;
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
 }
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+
+nav a:hover{
+color:#ddd;
 }
-.service-box {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 280px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+
+.hero{
+background:#222;
+color:white;
+padding:80px 20px;
+text-align:center;
 }
-.cta {
-    background: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+
+.hero h1{
+font-size:38px;
+margin-bottom:15px;
 }
-.cta a {
-    background: white;
-    color: #1e3a8a;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+
+.hero p{
+font-size:18px;
 }
-footer {
-    background: #0a1f44;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
 }
-@media(max-width: 768px) {
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
+
+h2{
+text-align:center;
+margin-bottom:30px;
+font-size:30px;
 }
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+ul{
+list-style:none;
+text-align:center;
+}
+
+ul li{
+padding:8px;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+input, textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#000;
+color:white;
+padding:14px;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#333;
+}
+
+footer{
+background:#0b0b0b;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Motor Operating Venture Express</h1>
-    <p>Reliable Same-Day & Evening Courier Services</p>
+<img src="logo.png" alt="Motor Operating Venture Express Logo">
+<h1>Motor Operating Venture Express</h1>
+<p>Fast • Reliable • Professional Courier Service</p>
 </header>
 
-<section class="section">
-    <h2>About Us</h2>
-    <p>
-        Motor Operating Venture Express is a dedicated same-day delivery and evening courier service
-        committed to speed, reliability, and professionalism. As a single-member LLC, we provide
-        personalized service with direct communication and dependable transport solutions for
-        businesses and individuals.
-    </p>
+<nav>
+<a href="#services">Services</a>
+<a href="#service-area">Service Area</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h1>Same-Day Delivery You Can Trust</h1>
+<p>Professional courier services for businesses and individuals.</p>
+</div>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Same-Day Delivery</h3>
+<p>Fast local delivery for packages, documents, and important shipments.</p>
+</div>
+
+<div class="card">
+<h3>Evening Courier</h3>
+<p>Flexible evening delivery options for businesses and urgent shipments.</p>
+</div>
+
+<div class="card">
+<h3>Business Delivery</h3>
+<p>Reliable courier support for companies needing routine deliveries.</p>
+</div>
+
+<div class="card">
+<h3>Rush Delivery</h3>
+<p>Priority service for time-sensitive shipments that must arrive quickly.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="service-box">
-            <h3>Same-Day Delivery</h3>
-            <p>Fast and secure same-day transport for urgent packages and documents.</p>
-        </div>
-        <div class="service-box">
-            <h3>Evening Courier Service</h3>
-            <p>After-hours and late evening delivery options for time-sensitive shipments.</p>
-        </div>
-        <div class="service-box">
-            <h3>Business Logistics Support</h3>
-            <p>Reliable local delivery support for offices, retailers, medical providers, and more.</p>
-        </div>
-    </div>
+<section id="service-area">
+
+<h2>Service Area</h2>
+
+<p style="text-align:center; margin-bottom:20px;">
+Motor Operating Venture Express proudly serves customers across the Hampton Roads area.
+</p>
+
+<ul>
+<li>Norfolk</li>
+<li>Virginia Beach</li>
+<li>Chesapeake</li>
+<li>Portsmouth</li>
+<li>Hampton</li>
+<li>Newport News</li>
+</ul>
+
 </section>
 
-<section class="cta">
-    <h2>Need Fast Delivery Today?</h2>
-    <p>Contact us now for reliable same-day and evening courier services.</p>
-    <a href="tel:7575751058">Call Now</a>
+<section id="pricing">
+
+<h2>Pricing</h2>
+
+<div class="pricing">
+
+<div class="card">
+<h3>Sedan Delivery</h3>
+<p><strong>Base Pickup:</strong> $15</p>
+<p><strong>$1.50 per mile</strong></p>
+<p>Ideal for documents and small packages.</p>
+</div>
+
+<div class="card">
+<h3>SUV / Large Packages</h3>
+<p><strong>Base Pickup:</strong> $25</p>
+<p><strong>$2.00 per mile</strong></p>
+<p>Perfect for larger deliveries and multiple items.</p>
+</div>
+
+<div class="card">
+<h3>Rush Service</h3>
+<p>$15 rush fee</p>
+<p>Priority pickup within 30-60 minutes.</p>
+</div>
+
+<div class="card">
+<h3>Evening Delivery</h3>
+<p>$10-$20 additional</p>
+<p>Available after 6 PM.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> 757-575-1058</p>
-    <p><strong>Email:</strong> motoroperatingventureexpress@gmail.com</p>
-    <p><strong>Service Area:</strong> Norfolk & Hampton Roads Area</p>
-    <p><strong>Operating Hours:</strong> Monday – Saturday | Same-Day & Evening Availability</p>
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p style="text-align:center; margin-bottom:20px;">
+Send us a message to schedule a delivery or request business services.
+</p>
+
+<form action="https://formspree.io/f/yourformid" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" rows="5" placeholder="How can we help?"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
 </section>
 
 <footer>
-    &copy; 2026 Motor Operating Venture Express LLC. All Rights Reserved.
+
+<p>© 2026 Motor Operating Venture Express</p>
+<p>Professional Same-Day Courier Service</p>
+
 </footer>
 
 </body>
-
 </html>
+
 
 
