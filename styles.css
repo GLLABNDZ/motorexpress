@@ -207,3 +207,36 @@ footer {
     font-size: 36px;
   }
 }
+
+/* ===== Card Color-Coding & Pricing Enhancements ===== */
+
+/* Optional: Color-code cards for clarity */
+.pricing-cards .card:nth-child(1) { background-color: #e6f7ff; } /* Standard Delivery */
+.pricing-cards .card:nth-child(2) { background-color: #fff0e6; } /* Rush / ASAP */
+.pricing-cards .card:nth-child(3) { background-color: #e6ffe6; } /* Add-Ons */
+.pricing-cards .card:nth-child(4) { background-color: #fffbe6; } /* Subscription/Bulk */
+.pricing-cards .card:nth-child(5) { background-color: #ffe6f0; } /* Terms & Conditions or extra card */
+
+/* Optional: Make card headings stand out more */
+.pricing-cards .card h3 {
+  color: #004080;
+}
+
+/* Optional: Price text highlight */
+.pricing-cards .price {
+  color: #fca311; /* Keeps your existing highlight */
+  font-weight: 700;
+}
+
+/* Hover effect override for colored cards */
+.pricing-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Ensure responsiveness remains consistent */
+@media(max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+}
