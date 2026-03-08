@@ -258,16 +258,20 @@ Motor Operating Venture Express proudly serves customers across the Hampton Road
 Send us a message to schedule a delivery or request business services.
 </p>
 
-<form action="https://formspree.io/f/xzdjzyqa method"="POST">
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<input type="email" name="email" placeholder="Your Email" required>
-
-<textarea name="message" rows="5" placeholder="How can we help?"></textarea>
-
-<button type="submit">Send Message</button>
-
+<form
+  action="https://formspree.io/f/xzdjzyqa"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 </form>
 
 </section>
@@ -281,6 +285,7 @@ Send us a message to schedule a delivery or request business services.
 
 </body>
 </html>
+
 
 
 
